@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  background: rgb(255, 183, 197);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 183, 197, 1) 0%,
+    rgba(255, 242, 244, 1) 100%
+  );
+}
+
+/*Header de la página*/
+
+.logo {
+  width: 100px;
+}
+
+.logoContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.titulo {
+  grid-area: header;
+  color: rgb(192, 67, 109);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+}
+
+/*Menú*/
+
+.menuContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  list-style: none;
+  background-color: rgb(255, 201, 193);
+  border: white solid 3px;
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.seccion {
+  text-decoration: none;
+  color: black;
+}
+
+.seccion:hover {
+  color: rgb(192, 67, 109);
+}
+
+/*Footer*/
+
+.footer {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 150px;
+  grid-template-areas: "redes datos creditos";
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 13px;
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  align-content: center;
+  grid-column-gap: 95px;
+}
+
+.redesFooter {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.datosFooter {
+  text-align: center;
+  line-height: 30px;
+}
+
+.creditosFooter {
+  text-align: center;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.logoRedes {
+  width: 30px;
+}
+
+.logosDatos {
+  width: 20px;
+}
+
+/*Home*/
+
+.h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+/*Texto de primera y segunda sección*/
+
+.textoHome {
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  color: rgb(192, 67, 109);
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074d9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+/*Imágenes de Index*/
+
+.imagenesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.imagen {
+  width: 300px;
+  height: 200px;
+  border: white solid 3px;
+}
+
+.comoLlegar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapa {
+  width: 420px;
+  height: 220px;
+  border: white solid 3px;
+  margin-top: 20px;
+}
+
+/*Sección Reservas*/
+
+.reservas {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+
+.botonesReserva {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ilustracion {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenReservas {
+  width: 230px;
+}
+
+/*Sección Contacto*/
+
+.descripcionContacto {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+
+.formularioContenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 280px;
+}
+
+.formularioItem {
+  text-align: center;
+  margin: 5px;
+  width: 200px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: bold;
+}
+
+/*Sección Nuestros gatos*/
+
+.nuestrosGatosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(2, 330px);
+  grid-template-areas:
+    "gatoA gatoB gatoC"
+    "gatoD gatoE gatoF";
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.imagenesGatos {
+  width: 250px;
+  object-fit: cover;
+  border: white solid 3px;
+}
+
+.gatoA {
+  grid-area: gatoA;
+  height: 330px;
+}
+
+.gatoB {
+  grid-area: gatoB;
+  height: 330px;
+}
+
+.gatoC {
+  grid-area: gatoC;
+  height: 330px;
+}
+
+.gatoD {
+  grid-area: gatoD;
+  height: 340px;
+}
+
+.gatoE {
+  grid-area: gatoE;
+  height: 340px;
+}
+
+.gatoF {
+  grid-area: gatoF;
+  height: 340px;
+}
+
+/*Sección Historia*/
+
+.h4 {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+.historia {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+
+.videoContenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video {
+  width: 642px;
+  height: 361px;
+}
+
+/*Sección FAQ*/
+
+.preguntas {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+
+.listaFAQ {
+  list-style-type: "❤";
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.metodosDePagoContenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.metodosDePago {
+  width: 300px;
+}
