@@ -61,7 +61,7 @@
 /*Footer*/
 
 .footer {
-  font-size: 14px;
+  font-size: 13px;
   background-color: #333;
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
@@ -71,7 +71,8 @@
 .footerContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 200px;
 }
 
 .redesFooter {
@@ -81,20 +82,20 @@
 
 .datosFooter {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 160px;
-  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 30px;
 }
 
 .creditosFooter {
   text-align: center;
   font-style: italic;
-  margin-top: 60px;
+  margin-top: 70px;
+  margin-right: 60px;
 }
 
 .logoRedes {
-  width: 35px;
+  width: 30px;
 }
 
 /*Home*/
