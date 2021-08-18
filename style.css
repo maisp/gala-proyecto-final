@@ -61,48 +61,40 @@
 /*Footer*/
 
 .footer {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 150px;
-  grid-template-areas: "redes datos creditos";
-  align-items: center;
-  width: 100%;
-  margin-top: 50px;
-  font-size: 13px;
+  font-size: 14px;
   background-color: #333;
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
+  margin-top: 30px;
 }
 
 .footerContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-  align-content: center;
-  grid-column-gap: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .redesFooter {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .datosFooter {
   text-align: center;
-  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 160px;
+  line-height: 25px;
 }
 
 .creditosFooter {
   text-align: center;
   font-style: italic;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .logoRedes {
-  width: 30px;
-}
-
-.logosDatos {
-  width: 20px;
+  width: 35px;
 }
 
 /*Home*/
