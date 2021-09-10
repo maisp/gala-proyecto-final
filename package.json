@@ -1,0 +1,19 @@
+{
+  "name": "gala-proyecto-final",
+  "version": "1.0.0",
+  "description": "Proyecto final del curso de Desarrollo Web de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Maitena Sipis",
+  "license": "ISC",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "npm": "^7.21.0"
+  }
+}

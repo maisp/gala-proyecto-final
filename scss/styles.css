@@ -1,0 +1,235 @@
+@charset "UTF-8";
+body {
+  background-color: #fff2f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo {
+  width: 90px;
+  margin-top: 18px;
+}
+
+.titulo {
+  font-family: "Raleway", sans-serif;
+  color: #c0436d;
+}
+
+.menu {
+  background-color: #ffc9c1;
+  font-family: "Tajawal", sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.contenido-footer {
+  font-size: 15px;
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+.contenido-footer-redes {
+  width: 40px;
+}
+
+.contenido-footer-pago {
+  width: 50px;
+}
+
+.creditos:hover {
+  text-decoration: none;
+  color: #ffc9c1;
+}
+
+.titulos-home, .texto-home {
+  font-family: "Montserrat", sans-serif;
+}
+
+.texto-home {
+  font-size: 18px;
+}
+
+.container-fluid {
+  width: 70%;
+}
+
+.imagenes-home {
+  width: 200px;
+}
+
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 540px;
+}
+
+.image-box img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.image-box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mapa {
+  width: 420px;
+  height: 220px;
+  border: white solid 3px;
+  margin-top: 20px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #c0436d;
+  text-decoration: none;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  color: #c0436d;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c0436d;
+  -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.descripcion-contacto {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formulario {
+  border: double #c0436d 2px;
+  padding: 20px;
+}
+
+.reservas {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.reservas-imagenes {
+  width: 230px;
+}
+
+.reservas-botones {
+  gap: 10px;
+}
+
+.preguntas, .lista-faq {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.lista-faq {
+  list-style-type: "❤";
+}
+
+.historia {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: 90%;
+}
+
+.overlay {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  height: 90%;
+  width: 82%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  background-color: #c0436d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

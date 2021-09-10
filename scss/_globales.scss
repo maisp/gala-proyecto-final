@@ -1,0 +1,59 @@
+$fontfamilygeneral: "Montserrat", sans-serif;
+
+@mixin coloroscuro {
+  color: rgb(192, 67, 109);
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  @include coloroscuro;
+  text-decoration: none;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  @include coloroscuro;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(192, 67, 109);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}

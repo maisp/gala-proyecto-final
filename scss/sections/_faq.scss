@@ -1,0 +1,9 @@
+.preguntas {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.lista-faq {
+  @extend .preguntas;
+  list-style-type: "❤";
+}

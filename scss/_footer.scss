@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+  .footer {
+    position: sticky;
+  }
+}
+
+.contenido-footer {
+  font-size: 15px;
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+.contenido-footer-redes {
+  width: 40px;
+}
+
+.contenido-footer-pago {
+  width: 50px;
+}
+
+.creditos:hover {
+  text-decoration: none;
+  color: rgb(255, 201, 193);
+}
