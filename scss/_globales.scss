@@ -57,9 +57,3 @@ $fontfamilygeneral: "Montserrat", sans-serif;
 .my-float {
   margin-top: 16px;
 }
-
-.alineacion-texto-mobile {
-  @media (min-width: 320px) {
-    text-align: left;
-  }
-}

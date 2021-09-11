@@ -155,12 +155,6 @@ body {
   margin-top: 16px;
 }
 
-@media (min-width: 320px) {
-  .alineacion-texto-mobile {
-    text-align: left;
-  }
-}
-
 .descripcion-contacto {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -198,22 +192,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-@media (max-width: 500px) {
-  .container,
-  .image,
-  .overlay,
-  .text {
-    display: none;
-  }
-}
-
 .container {
   position: relative;
   width: 50%;
 }
 
 .image {
-  display: block;
   width: 90%;
   height: 90%;
 }

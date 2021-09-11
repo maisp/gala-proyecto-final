@@ -1,19 +1,9 @@
-.container,
-.image,
-.overlay,
-.text {
-  @media (max-width: 500px) {
-    display: none;
-  }
-}
-
 .container {
   position: relative;
   width: 50%;
 }
 
 .image {
-  display: block;
   width: 90%;
   height: 90%;
 }
