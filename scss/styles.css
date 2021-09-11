@@ -198,6 +198,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 500px) {
+  .container,
+  .image,
+  .overlay,
+  .text {
+    display: none;
+  }
+}
+
 .container {
   position: relative;
   width: 50%;
