@@ -57,3 +57,9 @@ $fontfamilygeneral: "Montserrat", sans-serif;
 .my-float {
   margin-top: 16px;
 }
+
+p {
+  @media (min-width: 320px) {
+    text-align: left;
+  }
+}
