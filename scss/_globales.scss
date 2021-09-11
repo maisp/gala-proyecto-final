@@ -58,7 +58,7 @@ $fontfamilygeneral: "Montserrat", sans-serif;
   margin-top: 16px;
 }
 
-p {
+.alineacion-texto-mobile {
   @media (min-width: 320px) {
     text-align: left;
   }

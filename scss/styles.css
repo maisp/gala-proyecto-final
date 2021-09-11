@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .logo {
@@ -27,7 +27,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .footer {
+  .footer-media {
     position: -webkit-sticky;
     position: sticky;
   }
@@ -53,8 +53,7 @@ body {
   color: #ffc9c1;
 }
 
-.titulos-home,
-.texto-home {
+.titulos-home, .texto-home {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -85,12 +84,12 @@ body {
   width: 100%;
   height: auto;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 .image-box:hover img {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mapa {
@@ -148,7 +147,7 @@ body {
   text-align: center;
   font-size: 30px;
   -webkit-box-shadow: 2px 2px 3px #999;
-  box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
   z-index: 100;
 }
 
@@ -157,7 +156,7 @@ body {
 }
 
 @media (min-width: 320px) {
-  p {
+  .alineacion-texto-mobile {
     text-align: left;
   }
 }
@@ -185,8 +184,7 @@ body {
   gap: 10px;
 }
 
-.preguntas,
-.lista-faq {
+.preguntas, .lista-faq {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
