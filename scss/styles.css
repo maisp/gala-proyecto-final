@@ -155,6 +155,10 @@ body {
   margin-top: 16px;
 }
 
+.galeria {
+  width: 200px;
+}
+
 .descripcion-contacto {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -178,7 +182,7 @@ body {
   gap: 10px;
 }
 
-.preguntas, .lista-faq {
+.preguntas, .lista-faq, .perfil-gatos {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
@@ -192,43 +196,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  position: relative;
-  width: 50%;
+.galeria-gatos {
+  width: 300px;
 }
 
-.image {
-  width: 90%;
-  height: 90%;
+.info-gatos {
+  width: 400px;
 }
 
-.overlay {
-  position: absolute;
-  top: 15px;
-  bottom: 0;
-  left: 30px;
-  right: 0;
-  height: 90%;
-  width: 82%;
-  opacity: 0;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+.perfil-gatos {
+  list-style-type: "☕";
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  background-color: #c0436d;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.flecha-atras {
+  width: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

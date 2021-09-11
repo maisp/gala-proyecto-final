@@ -1,0 +1,12 @@
+.info-gatos {
+  width: 400px;
+}
+
+.perfil-gatos {
+  @extend .preguntas;
+  list-style-type: "☕";
+}
+
+.flecha-atras {
+  width: 40px;
+}
